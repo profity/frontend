@@ -3,12 +3,12 @@ import {Table, Icon} from 'semantic-ui-react'; // eslint-disable-line no-unused-
 
 // import PropTypes from 'prop-types';
 
-const Asset = () => (
+const Asset = ( asset ) => (
   <Table.Row>
     <Table.Cell collapsing>
       <Icon name='add circle'/>
     </Table.Cell>
-    <Table.Cell>BTC</Table.Cell>
+    <Table.Cell> { asset.symbol } </Table.Cell>
     <Table.Cell>$12222</Table.Cell>
     <Table.Cell>10%</Table.Cell>
     <Table.Cell>20</Table.Cell>

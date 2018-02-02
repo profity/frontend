@@ -1,10 +1,11 @@
-const todo = (state, action) => {
+import { ADD_ASSET } from '../constants/ActionTypes'
+
+const asset = (state, action) => {
+  console.log('called')
     switch (action.type) {
-      case 'ADD_TODO':
+      case ADD_ASSET:
         return {
-          id: action.id,
-          text: action.text,
-          completed: false,
+          symbol: action.symbol
         };
       case 'TOGGLE_TODO':
         if (state.id !== action.id) {
@@ -21,14 +22,14 @@ const todo = (state, action) => {
   
   const assets = (state = [], action) => {
     switch (action.type) {
-      case 'ADD_TODO':
+      case ADD_ASSET:
         return [
           ...state,
-          todo(undefined, action),
+          asset(undefined, action),
         ];
       case 'TOGGLE_TODO':
         return state.map(t =>
-          todo(t, action)
+          asset(t, action)
         );
       default:
         return state;

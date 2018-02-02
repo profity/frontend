@@ -6,14 +6,18 @@ import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
-const store = configureStore();
+import { PersistGate } from 'redux-persist/lib/integration/react';
+
+const {store, persistor} = configureStore();
 
 
 const renderApp = (Component, store) => {
     render(
       <AppContainer>
         <Provider store={store} >
-          <Component/>
+          <PersistGate loading={null} persistor={persistor}>
+            <Component/>
+          </PersistGate>
         </Provider>
       </AppContainer>,
       document.getElementById('root'),

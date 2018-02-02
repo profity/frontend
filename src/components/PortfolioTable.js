@@ -20,7 +20,7 @@ const PortfolioTable = ({ assets }) => (
 
     <Table.Body>
       { assets.map( asset =>
-        <Asset/>
+        <Asset key={asset.symbol} {...asset}/>
       )}
       
     </Table.Body>

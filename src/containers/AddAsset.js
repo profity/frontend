@@ -20,10 +20,12 @@ let AddAsset = ({ dispatch }) => {
 
                 <Form.Field>
                     <label>Symbol</label>
-                    <input placeholder='Symbol' />
+                    <input ref={node => {
+                        input = node
+                    }} placeholder='Symbol' />
                 </Form.Field>                
                 <Button primary type="submit">
-                    + addAsset
+                    + Asset
             </Button>
             </Form>
         </div>
