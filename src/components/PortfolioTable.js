@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'semantic-ui-react';
-import Asset from '../components/Asset';
-const PortfolioTable = ({ assets }) => (
+import ShowAsset from '../containers/ShowAsset';
+const PortfolioTable = ({ assets, onUpdatePrice }) => (
   <Table celled structured>
     <Table.Header>
       <Table.Row>
@@ -20,7 +20,7 @@ const PortfolioTable = ({ assets }) => (
 
     <Table.Body>
       { assets.map( asset =>
-        <Asset key={asset.symbol} {...asset}/>
+        <ShowAsset key={asset.symbol} {...asset} />
       )}
       
     </Table.Body>
