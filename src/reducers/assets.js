@@ -19,7 +19,7 @@ const todo = (state, action) => {
     }
   };
   
-  const todos = (state = [], action) => {
+  const assets = (state = [], action) => {
     switch (action.type) {
       case 'ADD_TODO':
         return [
@@ -35,4 +35,4 @@ const todo = (state, action) => {
     }
   };
   
-  export default todos;
+  export default assets;

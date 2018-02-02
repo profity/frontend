@@ -1,6 +1,6 @@
 import React from 'react';
-import {Table } from 'semantic-ui-react';
-import Asset from './Asset';
+import { Table } from 'semantic-ui-react';
+import Asset from '../components/Asset';
 const PortfolioTable = ({ assets }) => (
   <Table celled structured>
     <Table.Header>

@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import { createStore, applyMiddleware } from 'redux';
 import { createLogger } from 'redux-logger';
-import todoApp from './reducers';
+import profityApp from './reducers';
 
 const configureStore = () => {
   const middlewares = [];
@@ -10,7 +10,7 @@ const configureStore = () => {
   }
 
   return createStore(
-    todoApp
+    profityApp
     //,
     //applyMiddleware(...middlewares)
   );

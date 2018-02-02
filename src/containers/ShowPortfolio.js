@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import PortfolioTable from './PortfolioTable';
+import PortfolioTable from '../components/PortfolioTable';
 
 const mapStateToProps = (state) => ({assets: state.assets});
 
@@ -11,4 +11,4 @@ const ShowPortfolio = connect(
     mapDispatchToProps
   )(PortfolioTable);
   
-  export default ShowPortfolio;
+export default ShowPortfolio;
