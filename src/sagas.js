@@ -11,7 +11,7 @@ function* subscribe(action) {
 
 function* mySaga() {
     yield takeEvery(SUBSCRIBE_PRICE, subscribe);
-    yield call(wsSagas)
+    // yield call(wsSagas)
 }
 
 

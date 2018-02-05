@@ -2,8 +2,8 @@ import React from 'react';
 import { Table } from 'semantic-ui-react';
 import ShowAsset from '../containers/ShowAsset';
 const PortfolioTable = ({ assets, onUpdatePrice }) => (
-  <Table celled structured>
-    <Table.Header>
+  <Table celled structured >
+    <Table.Header fullWidth={ true }>
       <Table.Row>
         <Table.HeaderCell/>
         <Table.HeaderCell>Symbol</Table.HeaderCell>
