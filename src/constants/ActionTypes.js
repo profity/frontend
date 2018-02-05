@@ -1,2 +1,3 @@
-export const NEW_ASSET = 'NEW_ASSET'
 export const ADD_ASSET = 'ADD_ASSET'
+export const ASSET_PRICE_CHANGE = 'ASSET_PRICE_CHANGE'
+export const SUBSCRIBE_PRICE = 'SUBSCRIBE_PRICE'

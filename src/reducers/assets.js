@@ -1,19 +1,18 @@
-import { ADD_ASSET } from '../constants/ActionTypes'
+import { ADD_ASSET, ASSET_PRICE_CHANGE } from '../constants/ActionTypes'
 
 const asset = (state, action) => {
-  console.log('called')
     switch (action.type) {
       case ADD_ASSET:
         return {
           symbol: action.symbol
         };
-      case 'TOGGLE_TODO':
-        if (state.id !== action.id) {
+      case ASSET_PRICE_CHANGE:
+        if (state.symbol !== action.symbol) {
           return state;
         }
         return {
           ...state,
-          completed: !state.completed,
+          price: action.price,
         };
       default:
         return state;
@@ -27,10 +26,10 @@ const asset = (state, action) => {
           ...state,
           asset(undefined, action),
         ];
-      case 'TOGGLE_TODO':
-        return state.map(t =>
-          asset(t, action)
-        );
+      case ASSET_PRICE_CHANGE:
+        return state.map(t =>{
+          return asset(t, action)
+        });
       default:
         return state;
     }
