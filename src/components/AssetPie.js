@@ -1,5 +1,5 @@
 import React from 'react';
-import {PieChart, Pie, Legend, Tooltip} from 'recharts';
+import {PieChart, Pie,  Tooltip} from 'recharts';
 
 const data01 = [{name: 'Group A', value: 400}, {name: 'Group B', value: 300},
                   {name: 'Group C', value: 300}, {name: 'Group D', value: 200},
