@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import App from './components/App';
 import configureStore from './configureStore';
 import registerServiceWorker from './registerServiceWorker';
-import 'semantic-ui-css/semantic.min.css';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/lib/integration/react';

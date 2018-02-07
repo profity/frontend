@@ -35,6 +35,7 @@ function initCoinCap() {
     })
 }
 
+// eslint-disable-next-line
 function* wsSagas() {
     const channel = yield call(initCoinCap)
     while (true) {
