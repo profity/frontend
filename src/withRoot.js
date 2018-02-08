@@ -4,7 +4,14 @@ import Reboot from 'material-ui/Reboot';
 
 // A theme with custom primary and secondary color.
 // It's optional.
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  // transitions:{
+  //   duration:{
+  //     enteringScreen: 1,
+  //     leavingScreen: 1
+  //   }
+  // }
+});
 // {
 //     palette: {
 //       primary: {

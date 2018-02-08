@@ -5592,12 +5592,6 @@ react-jss@^8.1.0:
     prop-types "^15.6.0"
     theming "^1.3.0"
 
-"react-mui-speeddial@https://github.com/rahulravindran2709/react-mui-speeddial.git":
-  version "0.0.1"
-  resolved "https://github.com/rahulravindran2709/react-mui-speeddial.git#6b758e071aab52133430c10dedc7b818dfc6e098"
-  dependencies:
-    prop-types "^15.6.0"
-
 react-popper@^0.7.4:
   version "0.7.5"
   resolved "https://registry.npmjs.org/react-popper/-/react-popper-0.7.5.tgz#71c25946f291db381231281f6b95729e8b801596"
