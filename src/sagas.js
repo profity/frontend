@@ -1,16 +1,13 @@
+// eslint-disable-next-line 
 import { call, put, takeEvery,  take } from 'redux-saga/effects';
-import { SUBSCRIBE_PRICE } from './constants/ActionTypes';
 import { eventChannel } from 'redux-saga';
 import io from 'socket.io-client';
 import { assetPriceChange } from './actions'
 
 
-function* subscribe(action) {
-
-}
 
 function* mySaga() {
-    yield takeEvery(SUBSCRIBE_PRICE, subscribe);
+    // yield takeEvery(SUBSCRIBE_PRICE, subscribe);
     // yield call(wsSagas)
 }
 
