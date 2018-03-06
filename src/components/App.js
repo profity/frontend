@@ -2,24 +2,15 @@ import React from 'react';
 import './App.css'
 import withRoot from '../withRoot';
 import FAB from '../containers/FAB';
-import Paper from 'material-ui/Paper';
-
-const style = {
-  height: 100,
-  width: '50%',
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block'
-};
+import HTML5Backend from 'react-dnd-html5-backend';
+import Workspace from './Workspace'
 
 const App = () => (
-  <div>
-    <Paper style={style} zDepth={1}/>
-    <Paper style={style} zDepth={1}/>
-    <Paper style={style} zDepth={1}/>
-    <Paper style={style} zDepth={1}/>
+  <div backend={HTML5Backend}>
+    <Workspace/>
     <FAB/>
   </div>
+
 )
 
 export default withRoot(App);
